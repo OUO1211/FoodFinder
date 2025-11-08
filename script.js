@@ -8,7 +8,7 @@ let restaurantMarkers = [];
 let currentInfoWindow = null;
 
 // ****** 配置與限制 ******
-const IS_LIMITED_VERSION = false; // true: 限制次數 (最終版本) | false: 無限制 (測試版本)
+const IS_LIMITED_VERSION = true; // true: 限制次數 (最終版本) | false: 無限制 (測試版本)
 const MAX_SEARCH_COUNT = 3; 
 let searchCount = MAX_SEARCH_COUNT; 
 let mapsApiLoaded = false;
