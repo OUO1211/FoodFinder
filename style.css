@@ -1,0 +1,21 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+
+#radius {
+    width: 100px;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+#searchBtn {
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+#map {
+    height: 500px; /* 關鍵：地圖必須有高度才能顯示 */
+    width: 100%;  /* 確保地圖佔滿容器寬度 */
+    margin-top: 20px; /* 可選：讓地圖與按鈕分隔 */
+}
