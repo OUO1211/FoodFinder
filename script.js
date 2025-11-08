@@ -8,7 +8,7 @@ let restaurantMarkers = [];
 let currentInfoWindow = null;
 
 // ****** 配置與限制 ******
-const IS_LIMITED_VERSION = true; // true: 限制版本 (最終版) | false: 無限制版本 (開發測試用)
+const IS_LIMITED_VERSION = false; // true: 限制版本 (最終版) | false: 無限制版本 (開發測試用)
 const MAX_SEARCH_COUNT = 3; 
 let searchCount = MAX_SEARCH_COUNT; 
 let mapsApiLoaded = false;
@@ -39,7 +39,7 @@ function loadGoogleMapsApi() {
     // 建立一個 script 標籤並開始載入 API
     const script = document.createElement('script');
     // ⚠️ 替換 YOUR_API_KEY ⚠️
-    script.src = `https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&libraries=places&callback=initMapPlaceholder`; 
+    script.src = `https://maps.googleapis.com/maps/api/js?key=AIzaSyAZ8eAF1CPtMCiiJDcLJU9D6bHp6iePUpA&libraries=places&callback=initMapPlaceholder`; 
     script.async = true;
     document.head.appendChild(script);
 }
