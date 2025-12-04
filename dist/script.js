@@ -10,7 +10,7 @@ let lastSearchResults = [];
 let wasmInitializedForCurrentResults = false; // 追蹤是否初始化過候選列表
 // 專案配置與計數相關
 const MAX_SEARCH_COUNT = 3;
-const IS_LIMITED_VERSION = false;
+const IS_LIMITED_VERSION = true;
 let searchCount = MAX_SEARCH_COUNT;
 let mapsApiLoaded = false;
 let firstSearchTriggered = false;
