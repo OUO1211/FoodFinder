@@ -32,7 +32,7 @@ let wasmInitializedForCurrentResults: boolean = false; // 追蹤是否初始化�
 // 專案配置與計數相關
 
 const MAX_SEARCH_COUNT: number = 3;
-const IS_LIMITED_VERSION: boolean = false;
+const IS_LIMITED_VERSION: boolean = true;
 let searchCount: number = MAX_SEARCH_COUNT;
 let mapsApiLoaded: boolean = false;
 let firstSearchTriggered: boolean = false;
