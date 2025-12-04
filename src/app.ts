@@ -4,12 +4,10 @@ const REQUIRED_SECRET = "alex2357111317"; // ⚠️ 定義你的秘密金鑰
 const urlParams = new URLSearchParams(window.location.search);
 const userKey = urlParams.get('key'); // 從 URL 取得 'key' 參數的值
 const isLocalhost = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1';
+const isGitHubPages = window.location.hostname === 'ouo1211.github.io';
 
-
-
-
-// 只有當「不是在本地運行」 AND 「密鑰不匹配」時，才阻擋存取。
-if (!isLocalhost && userKey !== REQUIRED_SECRET) {
+// 只有當「不是在本地運行」AND「不是 GitHub Pages」AND「密鑰不匹配」時，才阻擋存取。
+if (!isLocalhost && !isGitHubPages && userKey !== REQUIRED_SECRET) {
     // 如果金鑰不匹配，則阻止應用程式運行
     
     document.body.innerHTML = '<div style="margin: 50px; text-align: center;"><h1>ACCESS DENIED</h1><p>請確認您的存取金鑰。</p></div>';
