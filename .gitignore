@@ -5,7 +5,7 @@
 node_modules/
 
 #Build output
-dist/
+# dist/  (removed to allow deployment)
 
 #Compiled JS from TypeScript
 src/*.js
